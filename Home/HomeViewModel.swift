@@ -2,26 +2,27 @@
 //  HomeViewModel.swift
 //  NYReader
 //
-//  Created by Hp  on 24/01/2022.
+//  Created by Mohammed Gamal  on 24/01/2022.
 //
 
 import Foundation
 import UIKit
 
+    // MARK: - protocols
 protocol HomeViewModelProtocol {
     func dataUpdated()
-    
     func showLoader()
 }
 
 class HomeViewModel {
+    
     // MARK: - Properties
     var news = [NewsModel]()
     var selectedIndex: Int?
     let viewController: HomeViewModelProtocol
     
     
-    // MARK: Init
+    // MARK: Initialization
     init(viewController: HomeViewController) {
         self.viewController = viewController
     }
@@ -43,6 +44,7 @@ class HomeViewModel {
         return news.count
     }
     
+    // MARK: - Segue
     func prepareForDetailsViewController(segue: UIStoryboardSegue) {
         if let destination = segue.destination as? DetailsViewController {
             if let selectedIndex = selectedIndex {

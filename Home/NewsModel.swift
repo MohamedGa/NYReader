@@ -2,7 +2,7 @@
 //  NewsModel.swift
 //  NYReader
 //
-//  Created by Hp  on 24/01/2022.
+//  Created by Mohammed Gamal  on 24/01/2022.
 //
 
 import Foundation
@@ -20,6 +20,7 @@ struct NewsResponse : Decodable {
         news = try container.decode([NewsModel].self, forKey: .news)
     }
 }
+
 
 struct NewsModel : Decodable {
     let headLine : String
