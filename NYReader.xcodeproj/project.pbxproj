@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A6D17D41A638AFEE83E1687 /* Pods_NYReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E43D49A03AE9812F7FF3389 /* Pods_NYReader.framework */; };
+		9189F5A6CA7B3DA6CC6C8DCC /* Pods_NYReader_NYReaderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788B18329025E6E95F8E03C8 /* Pods_NYReader_NYReaderUITests.framework */; };
+		E68B75B2279ECC2B006234BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B75B1279ECC2B006234BE /* AppDelegate.swift */; };
+		E68B75B4279ECC2B006234BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B75B3279ECC2B006234BE /* SceneDelegate.swift */; };
+		E68B75B9279ECC2B006234BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68B75B7279ECC2B006234BE /* Main.storyboard */; };
+		E68B75BB279ECC2E006234BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68B75BA279ECC2E006234BE /* Assets.xcassets */; };
+		E68B75BE279ECC2E006234BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68B75BC279ECC2E006234BE /* LaunchScreen.storyboard */; };
+		E68B75C9279ECC2E006234BE /* NYReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B75C8279ECC2E006234BE /* NYReaderTests.swift */; };
+		E68B75D4279ECC2E006234BE /* NYReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B75D3279ECC2E006234BE /* NYReaderUITests.swift */; };
+		E68B75E3279ECCFF006234BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B75E2279ECCFF006234BE /* HomeViewController.swift */; };
+		E68B75E5279ECD19006234BE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B75E4279ECD19006234BE /* HomeViewModel.swift */; };
+		E68B75E8279ECD37006234BE /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B75E7279ECD37006234BE /* Networking.swift */; };
+		E68B75EA279ED34C006234BE /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B75E9279ED34C006234BE /* NewsModel.swift */; };
+		E68B75EC279ED3F7006234BE /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B75EB279ED3F7006234BE /* NewsTableViewCell.swift */; };
+		E68B75F0279F01BA006234BE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B75EF279F01BA006234BE /* DetailsViewController.swift */; };
+		E68B75F2279F0359006234BE /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B75F1279F0359006234BE /* DetailsViewModel.swift */; };
+		F5A96276135AF88849CA8493 /* Pods_NYReaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F8DF34B98E5A664814FB01 /* Pods_NYReaderTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E68B75C5279ECC2E006234BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E68B75A6279ECC2B006234BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E68B75AD279ECC2B006234BE;
+			remoteInfo = NYReader;
+		};
+		E68B75D0279ECC2E006234BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E68B75A6279ECC2B006234BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E68B75AD279ECC2B006234BE;
+			remoteInfo = NYReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02C53BAE308857AAEF0664D2 /* Pods-NYReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYReaderTests.debug.xcconfig"; path = "Target Support Files/Pods-NYReaderTests/Pods-NYReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E43D49A03AE9812F7FF3389 /* Pods_NYReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F8DF34B98E5A664814FB01 /* Pods_NYReaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYReaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		788B18329025E6E95F8E03C8 /* Pods_NYReader_NYReaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYReader_NYReaderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FDDD2BDA4DABCD8C75EF388 /* Pods-NYReaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYReaderTests.release.xcconfig"; path = "Target Support Files/Pods-NYReaderTests/Pods-NYReaderTests.release.xcconfig"; sourceTree = "<group>"; };
+		9DA84D350345AC59238CD38F /* Pods-NYReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYReader.debug.xcconfig"; path = "Target Support Files/Pods-NYReader/Pods-NYReader.debug.xcconfig"; sourceTree = "<group>"; };
+		B2C9BBCD7D28BFDB4800427B /* Pods-NYReader-NYReaderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYReader-NYReaderUITests.debug.xcconfig"; path = "Target Support Files/Pods-NYReader-NYReaderUITests/Pods-NYReader-NYReaderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB95A8F865FD7AE3EABB7B4C /* Pods-NYReader-NYReaderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYReader-NYReaderUITests.release.xcconfig"; path = "Target Support Files/Pods-NYReader-NYReaderUITests/Pods-NYReader-NYReaderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E68B75AE279ECC2B006234BE /* NYReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68B75B1279ECC2B006234BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E68B75B3279ECC2B006234BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E68B75B8279ECC2B006234BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E68B75BA279ECC2E006234BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E68B75BD279ECC2E006234BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E68B75BF279ECC2E006234BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E68B75C4279ECC2E006234BE /* NYReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68B75C8279ECC2E006234BE /* NYReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYReaderTests.swift; sourceTree = "<group>"; };
+		E68B75CA279ECC2E006234BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E68B75CF279ECC2E006234BE /* NYReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68B75D3279ECC2E006234BE /* NYReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYReaderUITests.swift; sourceTree = "<group>"; };
+		E68B75D5279ECC2E006234BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E68B75E2279ECCFF006234BE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E68B75E4279ECD19006234BE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E68B75E7279ECD37006234BE /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		E68B75E9279ED34C006234BE /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		E68B75EB279ED3F7006234BE /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		E68B75EF279F01BA006234BE /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E68B75F1279F0359006234BE /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		EEDAA7FED6083461E2AE1B78 /* Pods-NYReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYReader.release.xcconfig"; path = "Target Support Files/Pods-NYReader/Pods-NYReader.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E68B75AB279ECC2B006234BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A6D17D41A638AFEE83E1687 /* Pods_NYReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68B75C1279ECC2E006234BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A96276135AF88849CA8493 /* Pods_NYReaderTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68B75CC279ECC2E006234BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9189F5A6CA7B3DA6CC6C8DCC /* Pods_NYReader_NYReaderUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24051B97FB1E6DA7EC633F12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E43D49A03AE9812F7FF3389 /* Pods_NYReader.framework */,
+				788B18329025E6E95F8E03C8 /* Pods_NYReader_NYReaderUITests.framework */,
+				42F8DF34B98E5A664814FB01 /* Pods_NYReaderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E311C98722947B9E680618E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DA84D350345AC59238CD38F /* Pods-NYReader.debug.xcconfig */,
+				EEDAA7FED6083461E2AE1B78 /* Pods-NYReader.release.xcconfig */,
+				B2C9BBCD7D28BFDB4800427B /* Pods-NYReader-NYReaderUITests.debug.xcconfig */,
+				CB95A8F865FD7AE3EABB7B4C /* Pods-NYReader-NYReaderUITests.release.xcconfig */,
+				02C53BAE308857AAEF0664D2 /* Pods-NYReaderTests.debug.xcconfig */,
+				7FDDD2BDA4DABCD8C75EF388 /* Pods-NYReaderTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E68B75A5279ECC2B006234BE = {
+			isa = PBXGroup;
+			children = (
+				E68B75EE279F017A006234BE /* DetailsV */,
+				E68B75E6279ECD22006234BE /* Networking */,
+				E68B75E1279ECCAD006234BE /* Home */,
+				E68B75B0279ECC2B006234BE /* NYReader */,
+				E68B75C7279ECC2E006234BE /* NYReaderTests */,
+				E68B75D2279ECC2E006234BE /* NYReaderUITests */,
+				E68B75AF279ECC2B006234BE /* Products */,
+				8E311C98722947B9E680618E /* Pods */,
+				24051B97FB1E6DA7EC633F12 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E68B75AF279ECC2B006234BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E68B75AE279ECC2B006234BE /* NYReader.app */,
+				E68B75C4279ECC2E006234BE /* NYReaderTests.xctest */,
+				E68B75CF279ECC2E006234BE /* NYReaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E68B75B0279ECC2B006234BE /* NYReader */ = {
+			isa = PBXGroup;
+			children = (
+				E68B75B1279ECC2B006234BE /* AppDelegate.swift */,
+				E68B75B3279ECC2B006234BE /* SceneDelegate.swift */,
+				E68B75B7279ECC2B006234BE /* Main.storyboard */,
+				E68B75BA279ECC2E006234BE /* Assets.xcassets */,
+				E68B75BC279ECC2E006234BE /* LaunchScreen.storyboard */,
+				E68B75BF279ECC2E006234BE /* Info.plist */,
+			);
+			path = NYReader;
+			sourceTree = "<group>";
+		};
+		E68B75C7279ECC2E006234BE /* NYReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				E68B75C8279ECC2E006234BE /* NYReaderTests.swift */,
+				E68B75CA279ECC2E006234BE /* Info.plist */,
+			);
+			path = NYReaderTests;
+			sourceTree = "<group>";
+		};
+		E68B75D2279ECC2E006234BE /* NYReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E68B75D3279ECC2E006234BE /* NYReaderUITests.swift */,
+				E68B75D5279ECC2E006234BE /* Info.plist */,
+			);
+			path = NYReaderUITests;
+			sourceTree = "<group>";
+		};
+		E68B75E1279ECCAD006234BE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E68B75E2279ECCFF006234BE /* HomeViewController.swift */,
+				E68B75E4279ECD19006234BE /* HomeViewModel.swift */,
+				E68B75E9279ED34C006234BE /* NewsModel.swift */,
+				E68B75EB279ED3F7006234BE /* NewsTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E68B75E6279ECD22006234BE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E68B75E7279ECD37006234BE /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E68B75EE279F017A006234BE /* DetailsV */ = {
+			isa = PBXGroup;
+			children = (
+				E68B75EF279F01BA006234BE /* DetailsViewController.swift */,
+				E68B75F1279F0359006234BE /* DetailsViewModel.swift */,
+			);
+			path = DetailsV;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E68B75AD279ECC2B006234BE /* NYReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E68B75D8279ECC2E006234BE /* Build configuration list for PBXNativeTarget "NYReader" */;
+			buildPhases = (
+				E11226E349A065AEBA68D8F7 /* [CP] Check Pods Manifest.lock */,
+				E68B75AA279ECC2B006234BE /* Sources */,
+				E68B75AB279ECC2B006234BE /* Frameworks */,
+				E68B75AC279ECC2B006234BE /* Resources */,
+				43BE34EA801DFCCCAC5C334F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NYReader;
+			productName = NYReader;
+			productReference = E68B75AE279ECC2B006234BE /* NYReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E68B75C3279ECC2E006234BE /* NYReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E68B75DB279ECC2E006234BE /* Build configuration list for PBXNativeTarget "NYReaderTests" */;
+			buildPhases = (
+				DF67ADEE504D684BB895E7E7 /* [CP] Check Pods Manifest.lock */,
+				E68B75C0279ECC2E006234BE /* Sources */,
+				E68B75C1279ECC2E006234BE /* Frameworks */,
+				E68B75C2279ECC2E006234BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E68B75C6279ECC2E006234BE /* PBXTargetDependency */,
+			);
+			name = NYReaderTests;
+			productName = NYReaderTests;
+			productReference = E68B75C4279ECC2E006234BE /* NYReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E68B75CE279ECC2E006234BE /* NYReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E68B75DE279ECC2E006234BE /* Build configuration list for PBXNativeTarget "NYReaderUITests" */;
+			buildPhases = (
+				720C7F477C1DF396CF8BB86D /* [CP] Check Pods Manifest.lock */,
+				E68B75CB279ECC2E006234BE /* Sources */,
+				E68B75CC279ECC2E006234BE /* Frameworks */,
+				E68B75CD279ECC2E006234BE /* Resources */,
+				39C7A918ACDAAAE62BA66F55 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E68B75D1279ECC2E006234BE /* PBXTargetDependency */,
+			);
+			name = NYReaderUITests;
+			productName = NYReaderUITests;
+			productReference = E68B75CF279ECC2E006234BE /* NYReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E68B75A6279ECC2B006234BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					E68B75AD279ECC2B006234BE = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					E68B75C3279ECC2E006234BE = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = E68B75AD279ECC2B006234BE;
+					};
+					E68B75CE279ECC2E006234BE = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = E68B75AD279ECC2B006234BE;
+					};
+				};
+			};
+			buildConfigurationList = E68B75A9279ECC2B006234BE /* Build configuration list for PBXProject "NYReader" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E68B75A5279ECC2B006234BE;
+			productRefGroup = E68B75AF279ECC2B006234BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E68B75AD279ECC2B006234BE /* NYReader */,
+				E68B75C3279ECC2E006234BE /* NYReaderTests */,
+				E68B75CE279ECC2E006234BE /* NYReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E68B75AC279ECC2B006234BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68B75BE279ECC2E006234BE /* LaunchScreen.storyboard in Resources */,
+				E68B75BB279ECC2E006234BE /* Assets.xcassets in Resources */,
+				E68B75B9279ECC2B006234BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68B75C2279ECC2E006234BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68B75CD279ECC2E006234BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39C7A918ACDAAAE62BA66F55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NYReader-NYReaderUITests/Pods-NYReader-NYReaderUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NYReader-NYReaderUITests/Pods-NYReader-NYReaderUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NYReader-NYReaderUITests/Pods-NYReader-NYReaderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43BE34EA801DFCCCAC5C334F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NYReader/Pods-NYReader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NYReader/Pods-NYReader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NYReader/Pods-NYReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		720C7F477C1DF396CF8BB86D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYReader-NYReaderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF67ADEE504D684BB895E7E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYReaderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E11226E349A065AEBA68D8F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYReader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E68B75AA279ECC2B006234BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68B75EA279ED34C006234BE /* NewsModel.swift in Sources */,
+				E68B75EC279ED3F7006234BE /* NewsTableViewCell.swift in Sources */,
+				E68B75B2279ECC2B006234BE /* AppDelegate.swift in Sources */,
+				E68B75F2279F0359006234BE /* DetailsViewModel.swift in Sources */,
+				E68B75F0279F01BA006234BE /* DetailsViewController.swift in Sources */,
+				E68B75B4279ECC2B006234BE /* SceneDelegate.swift in Sources */,
+				E68B75E8279ECD37006234BE /* Networking.swift in Sources */,
+				E68B75E5279ECD19006234BE /* HomeViewModel.swift in Sources */,
+				E68B75E3279ECCFF006234BE /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68B75C0279ECC2E006234BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68B75C9279ECC2E006234BE /* NYReaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68B75CB279ECC2E006234BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68B75D4279ECC2E006234BE /* NYReaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E68B75C6279ECC2E006234BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E68B75AD279ECC2B006234BE /* NYReader */;
+			targetProxy = E68B75C5279ECC2E006234BE /* PBXContainerItemProxy */;
+		};
+		E68B75D1279ECC2E006234BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E68B75AD279ECC2B006234BE /* NYReader */;
+			targetProxy = E68B75D0279ECC2E006234BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E68B75B7279ECC2B006234BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E68B75B8279ECC2B006234BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E68B75BC279ECC2E006234BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E68B75BD279ECC2E006234BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E68B75D6279ECC2E006234BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E68B75D7279ECC2E006234BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E68B75D9279ECC2E006234BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DA84D350345AC59238CD38F /* Pods-NYReader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8FXC2L66D;
+				INFOPLIST_FILE = NYReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mg.NYReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E68B75DA279ECC2E006234BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEDAA7FED6083461E2AE1B78 /* Pods-NYReader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8FXC2L66D;
+				INFOPLIST_FILE = NYReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mg.NYReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E68B75DC279ECC2E006234BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C53BAE308857AAEF0664D2 /* Pods-NYReaderTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8FXC2L66D;
+				INFOPLIST_FILE = NYReaderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mg.NYReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NYReader.app/NYReader";
+			};
+			name = Debug;
+		};
+		E68B75DD279ECC2E006234BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FDDD2BDA4DABCD8C75EF388 /* Pods-NYReaderTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8FXC2L66D;
+				INFOPLIST_FILE = NYReaderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mg.NYReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NYReader.app/NYReader";
+			};
+			name = Release;
+		};
+		E68B75DF279ECC2E006234BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2C9BBCD7D28BFDB4800427B /* Pods-NYReader-NYReaderUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8FXC2L66D;
+				INFOPLIST_FILE = NYReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mg.NYReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NYReader;
+			};
+			name = Debug;
+		};
+		E68B75E0279ECC2E006234BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB95A8F865FD7AE3EABB7B4C /* Pods-NYReader-NYReaderUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8FXC2L66D;
+				INFOPLIST_FILE = NYReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mg.NYReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NYReader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E68B75A9279ECC2B006234BE /* Build configuration list for PBXProject "NYReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E68B75D6279ECC2E006234BE /* Debug */,
+				E68B75D7279ECC2E006234BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E68B75D8279ECC2E006234BE /* Build configuration list for PBXNativeTarget "NYReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E68B75D9279ECC2E006234BE /* Debug */,
+				E68B75DA279ECC2E006234BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E68B75DB279ECC2E006234BE /* Build configuration list for PBXNativeTarget "NYReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E68B75DC279ECC2E006234BE /* Debug */,
+				E68B75DD279ECC2E006234BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E68B75DE279ECC2E006234BE /* Build configuration list for PBXNativeTarget "NYReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E68B75DF279ECC2E006234BE /* Debug */,
+				E68B75E0279ECC2E006234BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E68B75A6279ECC2B006234BE /* Project object */;
+}

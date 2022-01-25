@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+
+class DetailsViewModel {
+    // MARK: - Properties
+    var news: NewsModel
+    
+    init(model: NewsModel) {
+        news = model
+    }
+    
+    // MARK: - Methods
+    func body() -> String {
+        return news.body
+    }
+}
